@@ -1,0 +1,62 @@
+/* pages/category/category.wxss */
+page,.cates{
+  height: 100%;
+}
+
+.active{
+  color: var(--themeColor);
+  border-left: 5rpx solid currentColor;
+}
+
+.cates .cates_container{
+  height: calc(100vh - 90rpx);
+  display: flex;
+}
+
+.cates .cates_container .left_menu{
+  flex: 3;
+}
+
+.cates .cates_container .left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.cates .cates_container .right_content{
+  flex: 7;
+}
+
+.cates .cates_container .right_content .goods_group{
+  padding: 10rpx 0;
+}
+
+.cates .cates_container .right_content .goods_group .goods_title{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cates .cates_container .right_content .goods_group .goods_title .delimiter{
+  padding: 0 15rpx;
+  color: #ccc;
+}
+
+.cates .cates_container .right_content .goods_group .goods_list{
+  display: flex;
+  flex-wrap: wrap;
+  /* 规定灵活的项目在必要的时候拆行或拆列。 */
+}
+
+.cates .cates_container .right_content .goods_group .goods_list navigator{
+  padding: 15rpx 0;
+  width: 33.33%;
+  text-align: center;
+}
+
+.cates .cates_container .right_content .goods_group .goods_list navigator image{
+ width: 50%;
+}

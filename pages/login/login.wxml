@@ -1,0 +1,5 @@
+<!--pages/login/login.wxml-->
+<view class="btn_login">
+  <button type="primary" plain bindtap="getUserProfile">授权登录</button>
+</view>
+

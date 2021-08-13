@@ -1,0 +1,34 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="feedback">
+  <!-- 监听自定义事件 -->
+  <Tabs tabs="{{tabs}}" bindtabsItemChange="handleTabsItemChange"></Tabs>
+  <view class="fd_main">
+    <view class="fd_title">问题的种类</view>
+    <view class="fd_tips">
+      <text>功能建议</text>
+      <text>购买遇到的问题</text>
+      <text>性能问题</text>
+      <text>其他</text>
+    </view>
+    <view class="fd_content">
+      <textarea value="{{textVal}}" bindinput="handleTextInput" placeholder="请描述您所遇到的问题"></textarea>
+      <view class="fd_tool">
+        <button bindtap="handleChooseImg">+</button>
+        <view 
+        class="up_img_item" wx:for="{{chooseImgs}}" wx:key="*this" 
+        bindtap="handleRemoveImg" data-index="{{index}}"
+        >
+          <UpImg src="{{item}}"></UpImg>
+        </view>
+      </view>
+    </view>
+    <view class="form_btn_wrap">
+      <button bindtap="handleFormSubmit" type="primary">
+        <icon type="success_no_circle" size="23" color="#ffffff"></icon>
+        提交
+      </button>
+    </view>
+  </view>
+  
+
+</view>

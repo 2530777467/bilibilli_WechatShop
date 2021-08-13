@@ -1,0 +1,16 @@
+/* pages/order/order.wxss */
+.order .order_item{
+  padding: 20rpx;
+  border-bottom: 1rpx solid #cccccc;
+}
+
+.order .order_item .order_no_row{
+  color: #666666;
+  display: flex;
+  padding-bottom: 15rpx;
+  justify-content: space-between;
+}
+
+.order .order_item .order_no_row .order_price{
+  color: var(--themeColor);
+}

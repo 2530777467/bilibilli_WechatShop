@@ -1,0 +1,64 @@
+/* pages/feedback/feedback.wxss */
+page{
+  background-color: #eeeeee;
+}
+
+.fd_main{
+  padding: 10rpx;
+  color: #666666;
+}
+
+.fd_main .fd_tips {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fd_main .fd_tips text{
+  width: 30%;
+  padding: 10rpx;
+  text-align: center;
+  margin: 20rpx 10rpx;
+  background-color: #fff;
+}
+
+.fd_main .fd_content{
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.fd_main .fd_content textarea{
+  padding: 15rpx;
+}
+
+.fd_main .fd_content .fd_tool{
+  display: flex;
+  flex-wrap: wrap;
+  padding-block-start: 30rpx;
+}
+
+.fd_main .fd_content .fd_tool button{
+  height: 90rpx;
+  width: 90rpx;
+  font-size: 60rpx;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 20rpx 0 20rpx 20rpx;
+  color: #cccccc;
+}
+
+.fd_main .fd_content .fd_tool .up_img_item{
+  margin: 20rpx 0 20rpx 20rpx;
+}
+
+.fd_main .form_btn_wrap{
+  margin-top: 20rpx;
+  /* display: flex;
+  justify-content: flex-end; */
+}
+
+.fd_main .form_btn_wrap button{
+  /* margin: 0 10rpx 0 0; */
+  width: 100%;
+  padding:15rpx;
+}
